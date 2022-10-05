@@ -1,23 +1,23 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import User from './components/User';
+import Pokemon from './components/Pokemon';
 
 function App() {
-  const [user, setUser] = useState(undefined)
+  const [pokemon, setPokemon] = useState(undefined)
 
   useEffect(() => {
-    fetch('https://reqres.in/api/users/1')
+    fetch('https://pokeapi.co/api/v2/pokemon/charmeleon')
       .then(response => response.json())
       .then(userFromAPI => {
         console.log({userFromAPI})
-        setUser(userFromAPI.data)
+        setPokemon(userFromAPI)
       })
   }, []);
   
   return (
     <div className="App">
       <h1>Lesson 6</h1>
-      <User user={user} />
+      <Pokemon pokemon={pokemon} />
     </div>
   );
 }
