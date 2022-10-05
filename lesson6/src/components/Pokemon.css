@@ -3,17 +3,25 @@ body {
 }
 
 .pokemon_container {
+    margin: 20px;
+    padding: 5px;
     background-color: #574a47;
-    text-align: center;
     width:fit-content;
     border-radius: 10px;
 }
 
 .pokemon_name {
+    text-align: center;
     font-weight: bold;
     color: #ff5a00;
 }
-.pokemon_description {
+
+p {
+    text-align: left;
     font-weight: bold;
     font-style: italic;
+}
+
+span {
+    color: green;
 }

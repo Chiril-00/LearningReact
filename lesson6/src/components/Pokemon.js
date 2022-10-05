@@ -6,10 +6,11 @@ export default function Pokemon({pokemon}) {
     ) : (
     <div className = 'pokemon_container'>
         <h2 className = 'pokemon_name'>{pokemon.name}</h2>
-        <p className='pokemon_description'>Base experience: {pokemon.base_experience}</p>
-        <p className='pokemon_description'>Weight: {pokemon.weight}</p>
-        <p className='pokemon_description'>Height: {pokemon.height}</p>
+        <p>Base experience: <span>{pokemon.base_experience}</span></p>
+        <p>Weight: <span>{pokemon.weight}</span></p>
+        <p>Height: <span>{pokemon.height}</span></p>
         <img src={pokemon.sprites.front_default} />
+        <img src={pokemon.sprites.back_default} />
     </div>
     );
 }
