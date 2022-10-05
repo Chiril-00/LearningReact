@@ -5,11 +5,11 @@ import InputWithClear from './components/InputWithClean';
 import AlertButton from './components/AlertButton';
 
 function App() {
-  const [name, setName] = useState('John');
+  const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
 
   const clear = () => {
-    alert(`${name} ${surname}`)
+    alert(`Hello, ${name} ${surname}!`)
     setName('');
     setSurname('');
   };
