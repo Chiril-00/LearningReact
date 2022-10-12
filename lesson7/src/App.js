@@ -18,7 +18,7 @@ function App() {
     
     getUser();
   }, [userId]);
-  
+
 function onInputChange(newValue) {
   console.log('value from input', newValue);
   setUserId(newValue);
